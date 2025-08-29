@@ -1,99 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Переводы и текстовые услуги</title>
-  <meta name="description" content="Переводы EN↔RU, EN↔HE, RU↔HE. Редактирование, корректура, SEO-тексты, резюме, локализация, субтитры. Другие языки — по запросу." />
-  <style>
-    /* База */
-    :root { --brand:#0a7cff; }
-    html,body{margin:0}
-    body{font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#fff; color:#111; line-height:1.6}
-    a{color:var(--brand); text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:960px; margin:0 auto; padding:16px}
-
-    /* Шапка */
-    header{border-bottom:1px solid #eee; background:#fff; position:sticky; top:0}
-    h1{margin:0; font-size:24px}
-
-    /* Сетка карточек */
-    .grid{display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(240px,1fr))}
-    .card{border:1px solid #eee; border-radius:12px; padding:14px; background:#fff}
-
-    /* Форма */
-    label{display:block; font-size:14px; color:#555; margin:8px 0 4px}
-    input,select,textarea{width:100%; padding:10px; border:1px solid #ddd; border-radius:10px; font:inherit; background:#fff}
-    textarea{min-height:120px; resize:vertical}
-    .btn{display:inline-block; padding:10px 14px; border-radius:10px; background:var(--brand); color:#fff; border:none; cursor:pointer}
-
-    /* Подвал */
-    footer{border-top:1px solid #eee; padding:16px; color:#555; font-size:14px}
-    h2{margin:20px 0 10px; font-size:20px}
-  </style>
+    <meta charset="UTF-8">
+    <title>Мастерская текстов и переводов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Great+Vibes&display=swap');
+        body { font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; background: #f7f7f7; color: #333; }
+        header { background: #2c3e50; color: white; padding: 60px 20px; text-align: center; }
+        header h1 { font-family: 'Great Vibes', cursive; margin: 0; font-size: 3.2em; }
+        header p { font-size: 1.2em; margin-top: 12px; }
+        section { padding: 40px 5vw; max-width: 900px; margin: auto; }
+        h2 { color: #2c3e50; font-size: 1.6em; }
+        ul { padding-left: 20px; }
+        .testimonial {
+            font-style: italic; background: #fff;
+            padding: 15px; border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        form {
+            display: flex; flex-direction: column; gap: 12px;
+            background: #fff; padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input, textarea, button {
+            padding: 12px; font-size: 1em; width: 100%;
+            border: 1px solid #ccc; border-radius: 6px;
+        }
+        button {
+            background: #2c3e50; color: white; border: none;
+            cursor: pointer; transition: background 0.3s ease;
+        }
+        button:hover { background: #1a242f; }
+        footer {
+            background: #2c3e50; color: white; text-align: center;
+            padding: 20px; font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.4em; }
+            header p { font-size: 1em; }
+            h2 { font-size: 1.3em; }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <h1>Переводы и текстовые услуги</h1>
-      <div>EN↔RU · EN↔HE · RU↔HE · другие языки — по запросу</div>
-    </div>
-  </header>
 
-  <main class="wrap">
+<header>
+    <h1>Мастерская текстов и переводов</h1>
+    <p>Уникальные тексты для сайтов, блогов и соцсетей + профессиональные переводы</p>
+</header>
+
+<section>
+    <h2>Обо мне</h2>
+    <p>Меня зовут Денис. Я создаю уникальные тексты, которые цепляют аудиторию, повышают вовлечённость и улучшают видимость в поисковых системах. Также выполняю качественные переводы с английского, иврита и русского языков. Работаю точно в срок и учитываю индивидуальные потребности клиента.</p>
+</section>
+
+<section>
     <h2>Услуги</h2>
-    <div class="grid">
-      <div class="card"><strong>Переводы</strong><br>EN↔RU, EN↔HE, RU↔HE + другие языки по запросу.</div>
-      <div class="card"><strong>Редактирование</strong><br>Стилистика, логика, адаптация под аудиторию.</div>
-      <div class="card"><strong>Корректура</strong><br>Орфография, пунктуация, единый стиль.</div>
-      <div class="card"><strong>SEO-тексты</strong><br>Статьи, лендинги, мета-теги без «воды».</div>
-      <div class="card"><strong>Уникальный контент</strong><br>Сайты, блоги, соцсети, описания товаров.</div>
-      <div class="card"><strong>Резюме</strong><br>CV RU/EN/HE, локализация под рынок, оформление.</div>
-      <div class="card"><strong>Локализация</strong><br>Сайты, интерфейсы, текст в продукте.</div>
-      <div class="card"><strong>Субтитры и транскрибация</strong><br>Видео/аудио→текст, SRT, перевод субтитров.</div>
-    </div>
+    <ul>
+        <li>Уникальные тексты для:
+            <ul>
+                <li>Сайтов и лендингов</li>
+                <li>Блогов и соцсетей</li>
+                <li>Коммерческих предложений и описаний услуг</li>
+            </ul>
+        </li>
+        <li>SEO‑оптимизация текста</li>
+        <li>Редактирование и корректура</li>
+        <li>Резюме и сопроводительные письма</li>
+        <li>Переводы (EN ⇄ RU ⇄ HE) и другие языки по запросу</li>
+    </ul>
+</section>
 
-    <h2>Бесплатная оценка</h2>
-    <form id="f">
-      <label for="pair">Языковая пара</label>
-      <select id="pair" name="pair">
-        <option>EN → RU</option><option>RU → EN</option>
-        <option>EN → HE</option><option>HE → EN</option>
-        <option>RU → HE</option><option>HE → RU</option>
-        <option>Другая (указать ниже)</option>
-      </select>
+<section>
+    <h2>Отзывы</h2>
+    <div class="testimonial">«Быстро и точно выполнен заказ на SEO-описания для сайта. Продажи выросли уже через неделю.» — Алина</div>
+    <div class="testimonial">«Спасибо за качественный перевод и оформление резюме. Меня пригласили на собеседование!» — Михаил</div>
+    <div class="testimonial">«Перевод технической инструкции был сделан профессионально и без задержек.» — Роман</div>
+    <div class="testimonial">«Отличные тексты для блога! Читаются легко, а вовлечённость выросла на 40%.» — Ирина</div>
+    <div class="testimonial">«Оформление лендинга с вашими текстами стало гораздо убедительнее. Спасибо!» — Валентина</div>
+    <div class="testimonial">«Видеоролик с моим сценарием, написанным здесь, собрал в 2 раза больше просмотров!» — Даниил</div>
+    <div class="testimonial">«Короткие заголовки для YouTube и описания — просто пушка! Чётко, цепко, с юмором.» — Алекс</div>
+</section>
 
-      <label for="volume">Объём (слов/знаков)</label>
-      <input id="volume" name="volume" placeholder="например, 1200 слов">
-
-      <label for="deadline">Срок</label>
-      <input id="deadline" name="deadline" placeholder="например, 2 дня / к пятнице">
-
-      <label for="details">Комментарий</label>
-      <textarea id="details" name="details" placeholder="Кратко опишите задачу, формат, стиль, термины"></textarea>
-
-      <div style="margin-top:10px">
-        <button class="btn" type="submit">Отправить запрос</button>
-        <span style="margin-left:10px">или напишите: <a id="directEmail" href="mailto:Dta1324@gmail.com">Dta1324@gmail.com</a> · <a href="https://wa.me/972526609268">WhatsApp</a></span>
-      </div>
+<section>
+    <h2>Связаться со мной</h2>
+    <form>
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="email" placeholder="Email или телефон" required>
+        <textarea placeholder="Сообщение" rows="5" required></textarea>
+        <button type="submit">Отправить</button>
     </form>
-  </main>
+</section>
 
-  <footer>
-    <div class="wrap">© <span id="year"></span> Переводы и тексты · Email: <a href="mailto:Dta1324@gmail.com">Dta1324@gmail.com</a> · WhatsApp: <a href="https://wa.me/972526609268">+972526609268</a></div>
-  </footer>
+<footer>
+    &copy; 2025 Мастерская текстов и переводов. Все права защищены.
+</footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('f').addEventListener('submit', (e) => {
-      e.preventDefault();
-      const data = Object.fromEntries(new FormData(e.target).entries());
-      const subject = encodeURIComponent('Запрос оценки перевода / текста');
-      const body = encodeURIComponent(
-        `Пара: ${data.pair}\nОбъём: ${data.volume}\nСрок: ${data.deadline}\nКомментарий:\n${data.details}`
-      );
-      location.href = `mailto:Dta1324@gmail.com?subject=${subject}&body=${body}`;
-    });
-  </script>
 </body>
 </html>
